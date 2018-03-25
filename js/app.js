@@ -93,10 +93,11 @@ var displayCard = function (){
 function cardOpen() {
     openedCards.push(this);
     var len = openedCards.length;
+    console.log(len);
     if(len === 2){
-        moveCounter();
+        //moveCounter();
         if(openedCards[0].type === openedCards[1].type){
-            matched();
+            setTimeout(matched, 1200);
         } else {
             unmatched();
         }
@@ -111,7 +112,7 @@ function matched(){
     openedCards[0].classList.remove("show", "open", "no-event");
     openedCards[1].classList.remove("show", "open", "no-event");
     openedCards = [];
-    setTimeout(function() {modal.classList.add("show")}, 1100);
+    congratulations();
 }
 
 
@@ -125,7 +126,7 @@ function unmatched(){
         openedCards[1].classList.remove("show", "open", "no-event","unmatched");
         enable();
         openedCards = [];
-    },1100);
+    },100);
 }
 
 
@@ -199,9 +200,8 @@ function startTimer(){
 
 // @description congratulations when all cards match, show modal and moves, time and rating
 function congratulations(){
-    if (matchedCard.length == 16){
         clearInterval(interval);
-        finalTime = timer.innerHTML;
+        var finalTime = timer.innerHTML;
 
         // show congratulations modal
         modal.classList.add("show");
@@ -209,14 +209,16 @@ function congratulations(){
         // declare star rating variable
         var starRating = document.querySelector(".stars").innerHTML;
 
+        var factOne = "I like trees";
+
         //showing move, rating, time on modal
         document.getElementById("finalMove").innerHTML = moves;
         document.getElementById("starRating").innerHTML = starRating;
         document.getElementById("totalTime").innerHTML = finalTime;
+        document.getElementById("factOne").innerHTML = factOne;
 
         //closeicon on modal
         closeModal();
-    };
 }
 
 
@@ -224,7 +226,7 @@ function congratulations(){
 function closeModal(){
     closeicon.addEventListener("click", function(e){
         modal.classList.remove("show");
-        startGame();
+        //startGame();
     });
 }
 
@@ -234,11 +236,10 @@ function playAgain(){
     modal.classList.remove("show");
 }
 
-
 // loop to add event listeners to each card
 for (var i = 0; i < cards.length; i++){
     card = cards[i];
     card.addEventListener("click", displayCard);
     card.addEventListener("click", cardOpen);
-    card.addEventListener("click",congratulations);
+    //card.addEventListener("click",congratulations);
 };
