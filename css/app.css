@@ -17,7 +17,9 @@ body {
 }
 
 body {
-	background: #ffffff;
+	background-image: url("network.jpg");
+	background-repeat: repeat;
+	/* background-position: -40% 40%; */
 	color: #008080;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
