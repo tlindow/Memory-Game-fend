@@ -217,21 +217,21 @@ function congratulations(){
         //document.getElementById("totalTime").innerHTML = finalTime;
 
         if (openedCards[0].type == "leaf") {
-          document.getElementById("factOne").innerHTML = "Biodiversity is also greatly important for research. Examples of biodiversity-dependent research include bioengineering organs from tissues that can be transplanted in a patient's body, searching for new medicines to cure cancer, and improving human nutrition. The possibilities are nearly endless.";
+          document.getElementById("factOne").innerHTML = "Biodiversity helps us research new solutions to problems. Biodiversity has helped us engineer new organs for patients. It has allowed us to search for new medicines to cure cancer. And it has helped up improve our nutrition.";
         } else if (openedCards[0].type == "plane") {
-          document.getElementById("factOne").innerHTML = "Through photosynthesis these organisms transform inorganic carbon in the atmosphere and in seawater into organic compounds, making them an essential part of Earth's carbon cycle. Because they take up carbon dioxide from the atmosphere, when they die they sink they carry this atmospheric carbon to the deep sea, making phytoplankton an important actor in the climate system. Phytoplankton also form the base of virtually every ocean food web. In short, they make most other ocean life possible."
+          document.getElementById("factOne").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible."
         } else if (openedCards[0].type == "anchor") {
-          document.getElementById("factOne").innerHTML = "Through photosynthesis these organisms transform inorganic carbon in the atmosphere and in seawater into organic compounds, making them an essential part of Earth's carbon cycle. Because they take up carbon dioxide from the atmosphere, when they die they sink they carry this atmospheric carbon to the deep sea, making phytoplankton an important actor in the climate system. Phytoplankton also form the base of virtually every ocean food web. In short, they make most other ocean life possible."
+          document.getElementById("factOne").innerHTML = "Nothing to see here!"
         } else if (openedCards[0].type == "bolt") {
-          document.getElementById("factOne").innerHTML = "In recent years outbreaks of SARS, Ebola, Marburg, Hantavirus pulmonary syndrome, avian influenza and malaria have been attributed to human impacts on biodiversity, the wildlife trade of unsustainable land use changes."
+          document.getElementById("factOne").innerHTML = "The outbreaks of widespread diseases, such as SARS, Ebola, and malaria, are a result of changes in biodiversity."
         } else if (openedCards[0].type == "cube") {
-          document.getElementById("factOne").innerHTML = "Watershed intercepts, absorbs, and slowly releases water. This sponge effect can reduce adverse impacts such as stream bank erosion, sediment transport, and the frequency and severity of floods and drought. In coastal areas, coral reefs and estuaries can limit the damaging effects of storm surges and tidal waves by acting as a physical barrier that reduces the water's height and speed. Up to 90% of the energy from wind-generated waves is absorbed by coral reefs, which helps protect adjacent ecosystems and human structures."
+          document.getElementById("factOne").innerHTML = "On the coast, coral reefs can limit damage from storms and tidal waves. Coral reefs act as a physical barrier that reduce the impact of the waves. Coral reefs help protect our ecosystems!"
         } else if (openedCards[0].type == "bicycle") {
           document.getElementById("factOne").innerHTML = "Hiking, kayaking, and bicycling keep us healthy. They’re fun too! There would be fewer places to go and less to see without biodiversity!"
         } else if (openedCards[0].type == "diamond") {
           document.getElementById("factOne").innerHTML = "There can be 10,000 to 50,000 species in less than a teaspoon of soil. There are more microbes in a teaspoon of soil than there are people on the earth! So much biodiversity in a teaspoon of soil!"
         } else if (openedCards[0].type == "bomb") {
-          document.getElementById("factOne").innerHTML = "Urban trees can affect air quality in the following ways: (i) converting carbon dioxide to oxygen through photosynthesis;(ii) intercepting particulate pollutants (dust, ash, pollen and smoke) and absorbing toxic gases such as ozone, sulphur dioxide, and nitrogen dioxide, (iii) emitting various volatile organic compounds contributing to ozone formation in cities"
+          document.getElementById("factOne").innerHTML = "Urban trees help us convert carbon dioxide to oxygen through photosynthesis. They also filter pollutants in our air. Lastly, they emit organic compounds that act as a layer of ozone protection for our cities."
         }
 
         //closeicon on modal
