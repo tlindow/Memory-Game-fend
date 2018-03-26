@@ -210,17 +210,28 @@ function congratulations(){
         // declare star rating variable
         var starRating = document.querySelector(".stars").innerHTML;
 
-        var factOne = "I like trees";
 
         //showing move, rating, time on modal
-        document.getElementById("finalMove").innerHTML = moves;
-        document.getElementById("starRating").innerHTML = starRating;
+        //document.getElementById("finalMove").innerHTML = moves;
+        //document.getElementById("starRating").innerHTML = starRating;
         //document.getElementById("totalTime").innerHTML = finalTime;
 
         if (openedCards[0].type == "leaf") {
-          document.getElementById("factOne").innerHTML = factOne;
-        } else {
-          document.getElementById("factOne").innerHTML = "the other one"
+          document.getElementById("factOne").innerHTML = "Biodiversity is also greatly important for research. Examples of biodiversity-dependent research include bioengineering organs from tissues that can be transplanted in a patient's body, searching for new medicines to cure cancer, and improving human nutrition. The possibilities are nearly endless.";
+        } else if (openedCards[0].type == "plane") {
+          document.getElementById("factOne").innerHTML = "Through photosynthesis these organisms transform inorganic carbon in the atmosphere and in seawater into organic compounds, making them an essential part of Earth's carbon cycle. Because they take up carbon dioxide from the atmosphere, when they die they sink they carry this atmospheric carbon to the deep sea, making phytoplankton an important actor in the climate system. Phytoplankton also form the base of virtually every ocean food web. In short, they make most other ocean life possible."
+        } else if (openedCards[0].type == "anchor") {
+          document.getElementById("factOne").innerHTML = "Through photosynthesis these organisms transform inorganic carbon in the atmosphere and in seawater into organic compounds, making them an essential part of Earth's carbon cycle. Because they take up carbon dioxide from the atmosphere, when they die they sink they carry this atmospheric carbon to the deep sea, making phytoplankton an important actor in the climate system. Phytoplankton also form the base of virtually every ocean food web. In short, they make most other ocean life possible."
+        } else if (openedCards[0].type == "bolt") {
+          document.getElementById("factOne").innerHTML = "In recent years outbreaks of SARS, Ebola, Marburg, Hantavirus pulmonary syndrome, avian influenza and malaria have been attributed to human impacts on biodiversity, the wildlife trade of unsustainable land use changes."
+        } else if (openedCards[0].type == "cube") {
+          document.getElementById("factOne").innerHTML = "Watershed intercepts, absorbs, and slowly releases water. This sponge effect can reduce adverse impacts such as stream bank erosion, sediment transport, and the frequency and severity of floods and drought. In coastal areas, coral reefs and estuaries can limit the damaging effects of storm surges and tidal waves by acting as a physical barrier that reduces the water's height and speed. Up to 90% of the energy from wind-generated waves is absorbed by coral reefs, which helps protect adjacent ecosystems and human structures."
+        } else if (openedCards[0].type == "bicycle") {
+          document.getElementById("factOne").innerHTML = "Hiking, kayaking, and bicycling keep us healthy. They’re fun too! There would be fewer places to go and less to see without biodiversity!"
+        } else if (openedCards[0].type == "diamond") {
+          document.getElementById("factOne").innerHTML = "There can be 10,000 to 50,000 species in less than a teaspoon of soil. There are more microbes in a teaspoon of soil than there are people on the earth! So much biodiversity in a teaspoon of soil!"
+        } else if (openedCards[0].type == "bomb") {
+          document.getElementById("factOne").innerHTML = "Urban trees can affect air quality in the following ways: (i) converting carbon dioxide to oxygen through photosynthesis;(ii) intercepting particulate pollutants (dust, ash, pollen and smoke) and absorbing toxic gases such as ozone, sulphur dioxide, and nitrogen dioxide, (iii) emitting various volatile organic compounds contributing to ozone formation in cities"
         }
 
         //closeicon on modal
