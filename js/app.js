@@ -94,6 +94,7 @@ function cardOpen() {
     openedCards.push(this);
     var len = openedCards.length;
     console.log(len);
+    moveCounter();
     if(len === 2){
         //moveCounter();
         if(openedCards[0].type === openedCards[1].type){
@@ -126,7 +127,7 @@ function unmatched(){
         openedCards[1].classList.remove("show", "open", "no-event","unmatched");
         enable();
         openedCards = [];
-    },100);
+    },1100);
 }
 
 
@@ -201,7 +202,7 @@ function startTimer(){
 // @description congratulations when all cards match, show modal and moves, time and rating
 function congratulations(){
         clearInterval(interval);
-        var finalTime = timer.innerHTML;
+        //var finalTime = timer.innerHTML;
 
         // show congratulations modal
         modal.classList.add("show");
@@ -214,7 +215,7 @@ function congratulations(){
         //showing move, rating, time on modal
         document.getElementById("finalMove").innerHTML = moves;
         document.getElementById("starRating").innerHTML = starRating;
-        document.getElementById("totalTime").innerHTML = finalTime;
+        //document.getElementById("totalTime").innerHTML = finalTime;
 
         if (openedCards[0].type == "leaf") {
           document.getElementById("factOne").innerHTML = factOne;
@@ -239,6 +240,7 @@ function closeModal(){
 // @desciption for user to play Again
 function playAgain(){
     modal.classList.remove("show");
+    startTimer();
 }
 
 // loop to add event listeners to each card
