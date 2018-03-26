@@ -111,8 +111,8 @@ function matched(){
     openedCards[1].classList.add("match", "disabled");
     openedCards[0].classList.remove("show", "open", "no-event");
     openedCards[1].classList.remove("show", "open", "no-event");
-    openedCards = [];
     congratulations();
+    openedCards = [];
 }
 
 
@@ -215,7 +215,12 @@ function congratulations(){
         document.getElementById("finalMove").innerHTML = moves;
         document.getElementById("starRating").innerHTML = starRating;
         document.getElementById("totalTime").innerHTML = finalTime;
-        document.getElementById("factOne").innerHTML = factOne;
+
+        if (openedCards[0].type == "leaf") {
+          document.getElementById("factOne").innerHTML = factOne;
+        } else {
+          document.getElementById("factOne").innerHTML = "the other one"
+        }
 
         //closeicon on modal
         closeModal();
