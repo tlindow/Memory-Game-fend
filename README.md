@@ -1,5 +1,7 @@
 # Memory Game Project
 
+This repository was forked from sandraisrael's memory game project. Modals were added after matched cards and theme colors were changed.
+
 ## What is the Memory Game
 This is a simple game built to test a users memory. There's a deck of cards with different icons. 
 ![snippet](img/snippet.png)
