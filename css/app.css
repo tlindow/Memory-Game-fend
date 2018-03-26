@@ -176,7 +176,7 @@ h1 {
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .popup h2 {
@@ -223,7 +223,7 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Open Sans', sans-serif;
 	color: #ffffff;
 	border-radius: 5px;
 }
