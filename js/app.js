@@ -127,7 +127,7 @@ function unmatched(){
         openedCards[1].classList.remove("show", "open", "no-event","unmatched");
         enable();
         openedCards = [];
-    },1100);
+    },2300);
 }
 
 
