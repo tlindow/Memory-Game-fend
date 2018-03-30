@@ -40,22 +40,24 @@ h1 {
 }
 
 .deck .card img {
-    max-width: 100%;
-    max-height: 100%;
-		visibility: hidden;
+  max-width: 100%;
+  max-height: 100%;
+	visibility: hidden;
 }
 
 .deck .card.show img {
-    max-width: 100%;
-    max-height: 100%;
-		border-radius: 5px;
-		visibility: visible;
-		opacity: .8;
+  max-width: 100%;
+  max-height: 100%;
+	visibility: visible;
+	opacity: .8;
 }
 
-.deck {
-	height: 500px;
+.deck .card.match img {
+	max-width: 100%;
+	max-height: 100%;
+	visibility: inherit;
 }
+
 /*
  * Styles for the deck of cards
  */
@@ -63,7 +65,7 @@ h1 {
 .deck {
 	width: 100%;
 	background: #FFFFFF;
-	padding: 3rem;
+	padding: 2rem;
 	border-radius: 4px;
 	/* box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5); */
 	display: flex;
@@ -76,7 +78,7 @@ h1 {
 .deck .card {
 	height: 3.7rem;
 	width: 3.7rem;
-	margin: 0.2rem 0.2rem;
+	margin: 1rem;
 	background: #008080;
 	font-size: 0;
 	color: #ffffff;
@@ -342,13 +344,13 @@ h1 {
 	}
 
 	.deck {
-		max-width: 1000px;
+		max-width: 850px;
 		max-height: 1000px;
 	}
 
 	.deck .card {
-		height: 30%;
-		width: 15%;
+		height: 150px;
+		width: 150px;
 	}
 
 	.popup {
