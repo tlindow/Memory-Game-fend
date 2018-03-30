@@ -220,20 +220,26 @@ function congratulations(){
           document.getElementById("factOne").innerHTML = "Biodiversity helps us research new solutions to problems. Biodiversity has helped us engineer new organs for patients. It has allowed us to search for new medicines to cure cancer. And it has helped up improve our nutrition.";
           document.getElementById("myImage").src = "img/nutrition.jpg";
         } else if (openedCards[0].type == "anchor") {
-          document.getElementById("factOne").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible."
+          document.getElementById("factOne").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible.";
+          document.getElementById("myImage").src = "img/phytoplankton.jpg";
         } else if (openedCards[0].type == "plane") {
-          document.getElementById("factOne").innerHTML = "Nothing to see here!"
+          document.getElementById("factOne").innerHTML = "Nothing to see here!";
+          document.getElementById("myImage").src = "img/worms.jpg";
         } else if (openedCards[0].type == "bolt") {
-          document.getElementById("factOne").innerHTML = "The outbreaks of widespread diseases, such as SARS, Ebola, and malaria, are a result of changes in biodiversity."
+          document.getElementById("factOne").innerHTML = "The outbreaks of widespread diseases, such as SARS, Ebola, and malaria, are a result of changes in biodiversity.";
+          document.getElementById("myImage").src = "img/ebola.jpg";
         } else if (openedCards[0].type == "cube") {
-          document.getElementById("factOne").innerHTML = "On the coast, coral reefs can limit damage from storms and tidal waves. Coral reefs act as a physical barrier that reduce the impact of the waves. Coral reefs help protect our ecosystems!"
-          document.getElementById("myImage").src = "js/img/coral_reef.jpg";
+          document.getElementById("factOne").innerHTML = "On the coast, coral reefs can limit damage from storms and tidal waves. Coral reefs act as a physical barrier that reduce the impact of the waves. Coral reefs help protect our ecosystems!";
+          document.getElementById("myImage").src = "img/coral_reef.jpg";
         } else if (openedCards[0].type == "bicycle") {
-          document.getElementById("factOne").innerHTML = "Hiking, kayaking, and bicycling keep us healthy. They’re fun too! There would be fewer places to go and less to see without biodiversity!"
+          document.getElementById("factOne").innerHTML = "Hiking, kayaking, and bicycling keep us healthy. They’re fun too! There would be fewer places to go and less to see without biodiversity!";
+          document.getElementById("myImage").src = "img/hiking.jpg";
         } else if (openedCards[0].type == "diamond") {
-          document.getElementById("factOne").innerHTML = "There can be 10,000 to 50,000 species in less than a teaspoon of soil. There are more microbes in a teaspoon of soil than there are people on the earth! So much biodiversity in a teaspoon of soil!"
+          document.getElementById("factOne").innerHTML = "There can be 10,000 to 50,000 species in less than a teaspoon of soil. There are more microbes in a teaspoon of soil than there are people on the earth! So much biodiversity in a teaspoon of soil!";
+          document.getElementById("myImage").src = "img/soil.jpg";
         } else if (openedCards[0].type == "bomb") {
-          document.getElementById("factOne").innerHTML = "Urban trees help us convert carbon dioxide to oxygen through photosynthesis. They also filter pollutants in our air. Lastly, they emit organic compounds that act as a layer of ozone protection for our cities."
+          document.getElementById("factOne").innerHTML = "Urban trees help us convert carbon dioxide to oxygen through photosynthesis. They also filter pollutants in our air. Lastly, they emit organic compounds that act as a layer of ozone protection for our cities.";
+          document.getElementById("myImage").src = "img/urban_trees.jpg";
         }
 
         //closeicon on modal
