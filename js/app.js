@@ -254,6 +254,13 @@ function playAgain(){
     startTimer();
 }
 
+function changeGrid(){
+  var entry = document.createElement('li');
+  entry.className= 'card';
+  var list = document.getElementById('card-deck');
+  list.appendChild(entry);
+}
+
 // loop to add event listeners to each card
 for (var i = 0; i < cards.length; i++){
     card = cards[i];
