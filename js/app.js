@@ -20,13 +20,14 @@ let matchedCard = document.getElementsByClassName("match");
  let starsList = document.querySelectorAll(".stars li");
 
  // close icon in modal
- let closeicon = document.querySelector(".close");
+ //let closeicon = document.querySelector(".close");
 
  // declare modal
  let modal = document.getElementById("popup1")
 
  // array for opened cards
 var openedCards = [];
+var matchCount = 0;
 
 
 // @description shuffles cards
@@ -127,7 +128,7 @@ function unmatched(){
         openedCards[1].classList.remove("show", "open", "no-event","unmatched");
         enable();
         openedCards = [];
-    },2300);
+    },2200);
 }
 
 
@@ -237,21 +238,11 @@ function congratulations(){
         }
 
         //closeicon on modal
-        closeModal();
 }
 
 
 // @description close icon on modal
 function closeModal(){
-    closeicon.addEventListener("click", function(e){
-        modal.classList.remove("show");
-        //startGame();
-    });
-}
-
-
-// @desciption for user to play Again
-function playAgain(){
     modal.classList.remove("show");
     startTimer();
 }
