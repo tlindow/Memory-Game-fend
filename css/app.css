@@ -220,11 +220,15 @@ h1 {
 	color: #E5F720;
 }
 
-.popup .content-1,
-.content-2 {
+.popup .content-1 {
 	max-height: 100%;
 	overflow: auto;
 	text-align: center;
+}
+
+.popup .content-2 {
+	text-align: center;
+	margin: auto;
 }
 
 .show {
@@ -242,6 +246,7 @@ h1 {
 	padding: 0.7rem 1rem;
 	font-size: 1.1rem;
 	display: block;
+	margin-top:20px; 
 	margin-left: 10px;
 	margin-right: 10px;
 	width: 45%;
