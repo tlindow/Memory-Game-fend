@@ -33,6 +33,20 @@ body {
 	color: #008080;
 }
 
+#right_side {
+	position: absolute;
+	bottom: 15%;
+	right: 10%;
+	color: #008080;
+	background-color: #008080;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
 .container {
 	display: flex;
 	justify-content: center;
