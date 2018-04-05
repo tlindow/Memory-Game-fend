@@ -243,9 +243,9 @@ h1 {
 	opacity: 100 !important;
 }
 
-#starRating li {
+/* #starRating li {
 	display: inline-block;
-}
+} */
 
 #play-again {
 	float: left;

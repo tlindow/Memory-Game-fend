@@ -162,21 +162,21 @@ function moveCounter(){
         hour = 0;
         startTimer();
     }
-    // setting rates based on moves
-    if (moves > 8 && moves < 12){
-        for( i= 0; i < 3; i++){
-            if(i > 1){
-                stars[i].style.visibility = "collapse";
-            }
-        }
-    }
-    else if (moves > 13){
-        for( i= 0; i < 3; i++){
-            if(i > 0){
-                stars[i].style.visibility = "collapse";
-            }
-        }
-    }
+    // setting rates based on moves (not in use)
+    // if (moves > 8 && moves < 12){
+    //     for( i= 0; i < 3; i++){
+    //         if(i > 1){
+    //             stars[i].style.visibility = "collapse";
+    //         }
+    //     }
+    // }
+    // else if (moves > 13){
+    //     for( i= 0; i < 3; i++){
+    //         if(i > 0){
+    //             stars[i].style.visibility = "collapse";
+    //         }
+    //     }
+    // }
 }
 
 
