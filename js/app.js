@@ -7,7 +7,7 @@ console.log(cards);
 const deck = document.getElementById("card-deck");
 
 // declaring move variable
-let moves = 0;
+let moves = 40;
 let counter = document.querySelector(".moves");
 
 // declare variables for star icons
@@ -65,7 +65,7 @@ function startGame(){
         cards[i].classList.remove("show", "open", "match", "disabled");
     }
     // reset moves
-    moves = 0;
+    moves = 40;
     counter.innerHTML = moves;
     // reset rating
     for (var i= 0; i < stars.length; i++){
@@ -153,7 +153,7 @@ function enable(){
 
 // @description count player's moves
 function moveCounter(){
-    moves++;
+    moves--;
     counter.innerHTML = moves;
     //start timer on first click
     if(moves == 1){

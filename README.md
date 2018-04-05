@@ -30,7 +30,6 @@ I manipulated the DOM with Vanilla JS, altered part of the HTML and also styled 
 * created a pop-up modal (with content) when the player matches cards
 
 ## To Do's
-* Change "Move(s)" to "Chances" and configure to count down instead of up
 * Redo star rating system
 * Get rid of grid button for now
 * Use grid button functionality to create larger/smaller grids

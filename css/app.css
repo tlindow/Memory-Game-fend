@@ -26,6 +26,13 @@ body {
 	width: 100%;
 }
 
+#left_side {
+	position: absolute;
+	bottom: 15%;
+	left: 10%;
+	color: #008080;
+}
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -246,7 +253,7 @@ h1 {
 	padding: 0.7rem 1rem;
 	font-size: 1.1rem;
 	display: block;
-	margin-top:20px; 
+	margin-top:20px;
 	margin-left: 10px;
 	margin-right: 10px;
 	width: 45%;
