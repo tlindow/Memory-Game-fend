@@ -73,11 +73,10 @@ function startGame(){
         stars[i].style.visibility = "visible";
     }
     //reset timer
-    second = 0;
-    minute = 0;
-    hour = 0;
+    second = 59;
+    minute = 1;
     var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 mins 0 secs";
+    timer.innerHTML = "1 min 59 secs";
     clearInterval(interval);
 }
 
@@ -156,10 +155,9 @@ function moveCounter(){
     moves--;
     counter.innerHTML = moves;
     //start timer on first click
-    if(moves == 1){
-        second = 0;
-        minute = 0;
-        hour = 0;
+    if(moves == 39){
+        second = 59;
+        minute = 1;
         startTimer();
     }
     // setting rates based on moves (not in use)
@@ -181,21 +179,23 @@ function moveCounter(){
 
 
 // @description game timer
-var second = 0, minute = 0; hour = 0;
+var second = 59, minute = 1;
 var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
     interval = setInterval(function(){
         timer.innerHTML = minute+"mins "+second+"secs";
-        second++;
-        if(second == 60){
-            minute++;
-            second=0;
+        if (minute ==0 && second ==0){
+          clearInterval(interval);
+        } else if (minute==1 && second==0){
+          second=59;
+          minute--;
+        } else if (minute == 0 && second == 59) {
+          document.querySelector(".timer").style.color = "orange";
+        } else if (second == 29 && minute == 0) {
+            document.querySelector(".timer").style.color = "red";
         }
-        if(minute == 60){
-            hour++;
-            minute = 0;
-        }
+        second--;
     },1000);
 }
 
@@ -209,7 +209,7 @@ function congratulations(){
         modal.classList.add("show");
 
         // declare star rating variable
-        var starRating = document.querySelector(".stars").innerHTML;
+        //var starRating = document.querySelector(".stars").innerHTML;
 
 
         //showing move, rating, time on modal
@@ -242,7 +242,7 @@ function congratulations(){
           document.getElementById("factOne").innerHTML = "Urban trees help us convert carbon dioxide to oxygen through photosynthesis. They also filter pollutants in our air."
           document.getElementById("myImage").src = "img/urban_trees.jpg";
         }
-
+        setInterval(interval);
         //closeicon on modal
 }
 

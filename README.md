@@ -30,7 +30,6 @@ I manipulated the DOM with Vanilla JS, altered part of the HTML and also styled 
 * created a pop-up modal (with content) when the player matches cards
 
 ## To Do's
-* Get rid of grid button for now
 * Use grid button functionality to create larger/smaller grids
 * Create an obvious reset button for testing on the floor
 * Create an attract/get started screen
