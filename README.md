@@ -28,3 +28,13 @@ I manipulated the DOM with Vanilla JS, altered part of the HTML and also styled 
 ## How I changed the Memory Game (tlindow)
 * changed the theme colors and fonts
 * created a pop-up modal (with content) when the player matches cards
+
+## To Do's
+* Change "Move(s)" to "Chances" and configure to count down instead of up
+* Redo star rating system
+* Get rid of grid button for now
+* Use grid button functionality to create larger/smaller grids
+* Create an obvious reset button for testing on the floor
+* Create an attract/get started screen
+* Update background and main header
+* Create a pop up for more emoji selections (could be similar to Facebook's liking)
