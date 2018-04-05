@@ -253,12 +253,13 @@ function closeModal(){
     startTimer();
 }
 
-function changeGrid(){
-  var entry = document.createElement('li');
-  entry.className= 'card';
-  var list = document.getElementById('card-deck');
-  list.appendChild(entry);
-}
+// Will use later to create different levels of difficulty
+// function changeGrid(){
+//   var entry = document.createElement('li');
+//   entry.className= 'card';
+//   var list = document.getElementById('card-deck');
+//   list.appendChild(entry);
+// }
 
 // loop to add event listeners to each card
 for (var i = 0; i < cards.length; i++){
