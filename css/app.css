@@ -212,12 +212,12 @@ h1 {
 
 .popup {
 	margin: 70px auto;
-	background: radial-gradient(#008070,#3e7c7c,#669393);
 	border-radius: 20px;
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
 	font-family: 'Open Sans', sans-serif;
+	background: #008B80;
 }
 
 .popup h2 {
@@ -246,14 +246,21 @@ h1 {
 	max-height: 100%;
 	overflow: auto;
 	text-align: center;
-	background: #ffffff;
+	background: radial-gradient(#008070,#006880);
 	padding: 20px;
 	border-radius: 20px;
+	color: #ffffff;
 }
 
 .popup .content-2 {
 	text-align: center;
-	margin: auto;
+	margin: auto
+	color: #ffffff;
+}
+
+#myImage {
+	border: 5px solid #FCEE21;
+	border-radius: 5px;
 }
 
 .show {
@@ -264,7 +271,6 @@ h1 {
 .popup .response {
 	text-align: center;
 	color: #ffffff;
-	background: #;
 	border-radius: 20px;
 	padding: 20px;
 	width: 100%;
@@ -279,7 +285,8 @@ h1 {
 
 #play-again {
 	float: left;
-	background-color: #FCEE21;
+	background-color: #FCEEAE;
+	border-color: #FCEE21;
 	padding: 0.7rem 1rem;
 	font-size: 1.1rem;
 	display: block;
@@ -401,6 +408,6 @@ h1 {
 
 	.popup {
 		width: 50%;
-		height: 75%;
+		height: 65%;
 	}
 }
