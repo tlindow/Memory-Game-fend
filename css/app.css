@@ -211,7 +211,7 @@ h1 {
 .popup {
 	margin: 70px auto;
 	padding: 20px;
-	background: #ffffff;
+	background: #008080;
 	border-radius: 5px;
 	width: 85%;
 	position: relative;
@@ -245,6 +245,7 @@ h1 {
 	max-height: 100%;
 	overflow: auto;
 	text-align: center;
+	color: #ffffff;
 }
 
 .popup .content-2 {
@@ -263,7 +264,7 @@ h1 {
 
 #play-again {
 	float: left;
-	background-color: #008080;
+	background-color: #FCEE21;
 	padding: 0.7rem 1rem;
 	font-size: 1.1rem;
 	display: block;
