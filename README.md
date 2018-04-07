@@ -31,7 +31,6 @@ I manipulated the DOM with Vanilla JS, altered part of the HTML and also styled 
 
 ## To Do's
 * Use grid button functionality to create larger/smaller grids
-* Create an obvious reset button for testing on the floor
 * Create an attract/get started screen
 * Update background and main header
 * Create a pop up for more emoji selections (could be similar to Facebook's liking)
