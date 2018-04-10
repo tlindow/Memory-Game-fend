@@ -127,7 +127,7 @@ function unmatched(){
         openedCards[1].classList.remove("show", "open", "no-event","unmatched");
         enable();
         openedCards = [];
-    },2200);
+    },200);
 }
 
 
@@ -159,6 +159,8 @@ function moveCounter(){
         second = 59;
         minute = 1;
         startTimer();
+    } else if(moves <= 1){
+      moves=1;
     }
     // setting rates based on moves (not in use)
     // if (moves > 8 && moves < 12){
@@ -184,14 +186,12 @@ var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
     interval = setInterval(function(){
-        timer.innerHTML = minute+"mins "+second+"secs";
+        timer.innerHTML = minute+" min "+second+" secs";
         if (minute ==0 && second ==0){
           clearInterval(interval);
         } else if (minute==1 && second==0){
           second=59;
           minute--;
-        } else if (minute == 0 && second == 59) {
-          document.querySelector(".timer").style.color = "orange";
         } else if (second == 29 && minute == 0) {
             document.querySelector(".timer").style.color = "red";
         }

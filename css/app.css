@@ -296,7 +296,7 @@ h1 {
 	margin-left: 10px;
 	margin-right: 10px;
 	width: 45%;
-	height: 50px;
+	height: 40%;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2rem;
 	color: #ffffff;
@@ -508,7 +508,7 @@ h1 {
 
 	.popup {
 		width: 50%;
-		height: 70%;
+		height: 80%;
 	}
 
 	.popup .response {
