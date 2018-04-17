@@ -93,7 +93,7 @@ function startGame() {
   second = 59;
   minute = 1;
   var timer = document.querySelector(".timer");
-  timer.innerHTML = "1 min 59 secs";
+  // timer.innerHTML = "1 min 59 secs";
   clearInterval(interval);
 }
 
@@ -205,7 +205,7 @@ var interval;
 
 function startTimer() {
   interval = setInterval(function() {
-    timer.innerHTML = minute + " min " + second + " secs";
+    // timer.innerHTML = minute + " min " + second + " secs";
     if (minute == 0 && second == 0) {
       clearInterval(interval);
     } else if (minute == 1 && second == 0) {
@@ -239,8 +239,9 @@ function congratulations() {
   if (openedCards[0].type == "leaf") {
     document.getElementById("factOne").innerHTML = researching[z];
     document.getElementById("myImage").src = "img/nutrition.jpg";
+    document.getElementsByTagName("H3")[0].innerHTML = "Do you eat food?";
   } else if (openedCards[0].type == "anchor") {
-    document.getElementById("factTwo").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible.";
+    document.getElementById("factOne").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible.";
     document.getElementById("myImage").src = "img/phytoplankton.jpg";
   } else if (openedCards[0].type == "plane") {
     document.getElementById("factOne").innerHTML = "Nothing to see here!";
@@ -249,7 +250,7 @@ function congratulations() {
     document.getElementById("factOne").innerHTML = "The outbreaks of widespread diseases, such as SARS, Ebola, and malaria, are a result of changes in biodiversity.";
     document.getElementById("myImage").src = "img/ebola.jpg";
   } else if (openedCards[0].type == "cube") {
-    document.getElementById("factOne").innerHTML = "On the coast, coral reefs can limit damage from storms and tidal waves. Coral reefs act as a physical barrier to help protect our ecosystems!";
+    document.getElementById("factOne").innerHTML = "Coral reefs act as a physical barrier to help protect our coasts!";
     document.getElementById("myImage").src = "img/coral_reef.jpg";
   } else if (openedCards[0].type == "bicycle") {
     document.getElementById("factOne").innerHTML = "Hiking, kayaking, and bicycling keep us healthy. They’re fun too! There would be fewer places to go and less to see without biodiversity!";
