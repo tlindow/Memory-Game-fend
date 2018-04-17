@@ -3,6 +3,10 @@ let card = document.getElementsByClassName("card");
 let cards = [...card]
 console.log(cards);
 
+// content arrau holds all descriptions
+let content = document.getElementsByClassName("content");
+let contents = [...content];
+
 // deck of all cards in game
 const deck = document.getElementById("card-deck");
 
@@ -57,6 +61,7 @@ document.body.onload = startGame();
 function startGame() {
   // shuffle deck
   cards = shuffle(cards);
+
   // remove all exisiting classes from each card
   for (var i = 0; i < cards.length; i++) {
     deck.innerHTML = "";
@@ -65,6 +70,11 @@ function startGame() {
     });
     cards[i].classList.remove("show", "open", "match", "disabled");
   }
+
+  // shuffle contents
+  // contents = suffle(contents);
+
+
   // reset moves
   moves = 40;
   counter.innerHTML = moves;
@@ -220,10 +230,10 @@ function congratulations() {
   //document.getElementById("totalTime").innerHTML = finalTime;
 
   if (openedCards[0].type == "leaf") {
-    document.getElementById("factOne").innerHTML = "Biodiversity helps us research new solutions to problems. Biodiversity has helped us engineer new organs for patients and it has helped up improve our nutrition.";
+    document.getElementById("factOne").innerHTML = document.getElementById("factTwo").innerHTML ;
     document.getElementById("myImage").src = "img/nutrition.jpg";
   } else if (openedCards[0].type == "anchor") {
-    document.getElementById("factOne").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible.";
+    document.getElementById("factTwo").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible.";
     document.getElementById("myImage").src = "img/phytoplankton.jpg";
   } else if (openedCards[0].type == "plane") {
     document.getElementById("factOne").innerHTML = "Nothing to see here!";
