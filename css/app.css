@@ -229,7 +229,7 @@ h1 {
   animation-iteration-count: 1;
   animation-delay: 4s;
   animation-name: dropDownSize;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   z-index: -2;
 }
@@ -314,7 +314,7 @@ h1 {
   animation-delay: 4s;
   animation-name: dropDown;
   animation-duration: 4s;
-  animation-delay: 4s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
