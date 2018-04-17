@@ -11,7 +11,7 @@
   <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
   <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker">
-  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -26,7 +26,7 @@
       <span class="moves">0</span> Chance(s)
     </div>
 
-    <div id="right_side" class="play-again" onclick=startGame()>
+    <div id="right_side" class="play-again" onclick="startGame()">
       Reset
     </div>
 
@@ -52,7 +52,7 @@
       <li class="card" type="plane">
         <img src="img/worms.jpg">
       </li>
-      <li class="card match" type="anchor">
+      <li class="card" type="anchor">
         <img src="img\phytoplankton.jpg">
       </li>
       <li class="card" type="bolt">
@@ -61,7 +61,7 @@
       <li class="card" type="cube">
         <img src="img\coral_reef.jpg">
       </li>
-      <li class="card match" type="anchor">
+      <li class="card" type="anchor">
         <img src="img\phytoplankton.jpg">
       </li>
       <li class="card" type="leaf">
@@ -82,7 +82,7 @@
       <li class="card" type="bomb">
         <img src="img\urban_trees.jpg">
       </li>
-      <li class="card open show" type="bolt">
+      <li class="card" type="bolt">
         <img src="img\ebola.jpg">
       </li>
       <li class="card" type="bicycle">
@@ -97,22 +97,22 @@
     </ul>
 
     <div id="popup1" class="overlay">
-      <div class="popup">
+      <div id="popup">
         <div class="content-1">
           <div class="content-2">
             <img id="myImage" style="width:250px;height:250px;" src="img/nutrition.jpg">
           </div>
           <p>
-            <span id="factOne"> </span>
+            <span id="factOne"></span>
           </p>
         </div>
-        <div class="response">
+        <div id="response">
           <h3 style="margin:15px">HOW DO YOU FEEL ABOUT THIS?</h3>
           <button id="play-again" onclick="closeModal()">
-                    <i class="em em-thinking_face"></i></a>
+                    <i class="em em-thinking_face"></i>
                 </button>
           <button id="play-again" onclick="closeModal()">
-                    <i class="em em-astonished"></i></a>
+                    <i class="em em-astonished"></i>
                 </button>
         </div>
 

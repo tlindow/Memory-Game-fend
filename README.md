@@ -29,7 +29,12 @@ I manipulated the DOM with Vanilla JS, altered part of the HTML and also styled 
 * changed the theme colors and fonts
 * created a pop-up modal (with content) when the player matches cards
 
-## To Do's
+
+<!-- TODO: Use grid button functionality to create larger/smaller grids
+TODO: Create an attract/get started screen
+TODO: Update background and main header
+TODO: Create a pop up for more emoji selections (could be similar to Facebook's liking) -->
+## TODOs
 * Use grid button functionality to create larger/smaller grids
 * Create an attract/get started screen
 * Update background and main header

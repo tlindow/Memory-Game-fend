@@ -27,7 +27,7 @@ body {
 #left_side {
   position: absolute;
   padding: 1.4rem 2rem;
-  bottom: 20%;
+  bottom: 10%;
   left: 7%;
   color: #008080;
   font-size: 2rem;
@@ -35,11 +35,11 @@ body {
 
 #right_side {
   position: absolute;
-  bottom: 20%;
-  right: 10%;
+  bottom: 10%;
+  right: 7%;
   color: #008080;
   background-color: #008080;
-  padding: 0.7rem 1rem;
+  padding: 1.4rem 2rem;
   font-size: 2rem;
   display: block;
   font-family: 'Open Sans', sans-serif;
@@ -207,7 +207,7 @@ h1 {
   opacity: 1;
 }
 
-.popup {
+#popup {
   margin: 70px auto;
   border-radius: 20px;
   width: 85%;
@@ -215,16 +215,32 @@ h1 {
   transition: all 5s ease-in-out;
   font-family: 'Open Sans', sans-serif;
   background: #008B80;
+  /* height: 300px; */
 }
 
-.popup h2 {
+#popup.match {
+  margin: 70px auto;
+  border-radius: 20px;
+  width: 85%;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  background: #008B80;
+  height: 500px;
+  animation-iteration-count: 1;
+  animation-delay: 4s;
+  animation-name: dropDownSize;
+  animation-duration: 4s;
+  z-index: -2;
+}
+
+#popup h2 {
   margin-top: 0;
   margin-bottom: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
 
-.popup .close {
+#popup .close {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -235,28 +251,35 @@ h1 {
   color: #333;
 }
 
-.popup .close:hover {
+#popup .close:hover {
   color: #E5F720;
 }
 
-.popup .content-1 {
+.content-1 {
   max-height: 100%;
   overflow: auto;
   text-align: center;
   background: radial-gradient(#008070, #006880);
   padding: 20px;
   border-radius: 20px;
+  height: 300px;
+  /* scale this? Yes! It will cover up the bottom 100% or show some of it. And then extend the entire popup */
   color: #ffffff;
 }
 
-.popup .content-2 {
+.content-2 {
   text-align: center;
   margin: auto color: #ffffff;
+}
+
+#factOne {
+  margin: 10px;
 }
 
 #myImage {
   border: 5px solid #FCEE21;
   border-radius: 5px;
+  float: left;
 }
 
 .show {
@@ -264,13 +287,33 @@ h1 {
   opacity: 100 !important;
 }
 
-.popup .response {
+/* #response {
   text-align: center;
   color: #ffffff;
   border-radius: 20px;
   padding: 20px;
   width: 100%;
-  height: 30%;
+  height: 35%;
+  position: relative;
+  top: -80%;
+  z-index: -1;
+} */
+
+#response.match {
+  text-align: center;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 40%;
+  position: relative;
+  top: 0;
+  z-index: -1;
+  animation-iteration-count: 1;
+  animation-delay: 4s;
+  animation-name: dropDown;
+  animation-duration: 4s;
+  /* animation-delay: 3s; */
 }
 
 /* #starRating li {
@@ -296,6 +339,24 @@ h1 {
 }
 
 /* animations */
+
+@keyframes dropDown {
+  from {
+    top: -250px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes dropDownSize {
+  from {
+    height: 300px;
+  }
+  to {
+    height: 500px;
+  }
+}
 
 @keyframes flipInY {
   from {
@@ -371,7 +432,7 @@ h1 {
 /* For Tablets and larger screens
 ****************/
 
-@media (min-width: 750px) {
+/* @media (min-width: 750px) {
   .container {
     font-size: 14px;
   }
@@ -424,9 +485,9 @@ h1 {
     padding: 1.05rem 1.5rem;
     font-size: 1rem;
   }
-}
+} */
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .container {
     font-size: 22px;
   }
@@ -450,9 +511,9 @@ h1 {
     padding: 1.05rem 1.5rem;
     font-size: 2rem;
   }
-}
+} */
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .container {
     font-size: 36px;
   }
@@ -481,4 +542,4 @@ h1 {
     padding: 1.4rem 2rem;
     font-size: 1.1rem;
   }
-}
+} */

@@ -1,6 +1,6 @@
 // cards array holds all cards
 let card = document.getElementsByClassName("card");
-let cards = [...card]
+let cards = [...card];
 console.log(cards);
 
 // deck of all cards in game
@@ -23,11 +23,13 @@ let starsList = document.querySelectorAll(".stars li");
 //let closeicon = document.querySelector(".close");
 
 // declare modal
-let modal = document.getElementById("popup1")
+let modal = document.getElementById("popup1");
 
 // array for opened cards
 var openedCards = [];
 var matchCount = 0;
+var z = -1; //TODO make this go to zero after 2
+var researching = ["Biodiversity helps us research new solutions to problems. Biodiversity has helped us engineer new organs for patients and it has helped up improve our nutrition.", "description 2", "description 3"];
 
 
 // @description shuffles cards
@@ -46,7 +48,7 @@ function shuffle(array) {
   }
 
   return array;
-};
+}
 
 
 // @description shuffles cards when page is refreshed / loads
@@ -55,6 +57,10 @@ document.body.onload = startGame();
 
 // @description function to start a new play
 function startGame() {
+
+  //shuffle content
+  z++;
+
   // shuffle deck
   cards = shuffle(cards);
   // remove all exisiting classes from each card
@@ -69,7 +75,7 @@ function startGame() {
   moves = 40;
   counter.innerHTML = moves;
   // reset rating
-  for (var i = 0; i < stars.length; i++) {
+  for (i = 0; i < stars.length; i++) {
     stars[i].style.color = "#FFD700";
     stars[i].style.visibility = "visible";
   }
@@ -104,7 +110,7 @@ function cardOpen() {
       unmatched();
     }
   }
-};
+}
 
 
 // @description when cards match
@@ -209,6 +215,8 @@ function congratulations() {
 
   // show congratulations modal
   modal.classList.add("show");
+  document.getElementById("popup").classList.add("match");
+  document.getElementById("response").classList.add("match");
 
   // declare star rating variable
   //var starRating = document.querySelector(".stars").innerHTML;
@@ -218,9 +226,8 @@ function congratulations() {
   //document.getElementById("finalMove").innerHTML = moves;
   //document.getElementById("starRating").innerHTML = starRating;
   //document.getElementById("totalTime").innerHTML = finalTime;
-
   if (openedCards[0].type == "leaf") {
-    document.getElementById("factOne").innerHTML = "Biodiversity helps us research new solutions to problems. Biodiversity has helped us engineer new organs for patients and it has helped up improve our nutrition.";
+    document.getElementById("factOne").innerHTML = researching[z];
     document.getElementById("myImage").src = "img/nutrition.jpg";
   } else if (openedCards[0].type == "anchor") {
     document.getElementById("factOne").innerHTML = "Phytoplankton form the base of virtually every ocean food web. In short, they make most other ocean life possible.";
@@ -241,7 +248,7 @@ function congratulations() {
     document.getElementById("factOne").innerHTML = "There can be 10,000 to 50,000 species in less than a teaspoon of soil. There are more microbes in a teaspoon of soil than there are people on the earth!";
     document.getElementById("myImage").src = "img/soil.jpg";
   } else if (openedCards[0].type == "bomb") {
-    document.getElementById("factOne").innerHTML = "Urban trees help us convert carbon dioxide to oxygen through photosynthesis. They also filter pollutants in our air."
+    document.getElementById("factOne").innerHTML = "Urban trees help us convert carbon dioxide to oxygen through photosynthesis. They also filter pollutants in our air.";
     document.getElementById("myImage").src = "img/urban_trees.jpg";
   }
   setInterval(interval);
@@ -252,6 +259,8 @@ function congratulations() {
 // @description close icon on modal
 function closeModal() {
   modal.classList.remove("show");
+  document.getElementById("popup").classList.remove("match");
+  document.getElementById("response").classList.remove("match");
   startTimer();
 }
 
@@ -269,4 +278,4 @@ for (var i = 0; i < cards.length; i++) {
   card.addEventListener("click", displayCard);
   card.addEventListener("click", cardOpen);
   //card.addEventListener("click",congratulations);
-};
+}
