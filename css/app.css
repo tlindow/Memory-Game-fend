@@ -324,19 +324,20 @@ h1 {
 
 #play-again {
   float: left;
+  text-align: center;
   background-color: #FCEEAE;
   border-color: #FCEE21;
   padding: 0.7rem 1rem;
   font-size: 1.1rem;
-  display: block;
+  display: inline-block;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 45px;
   margin-right: 10px;
   width: 45%;
   height: 40%;
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
-  color: #ffffff;
+  color: #006880;
   border-radius: 20px;
 }
 
