@@ -258,14 +258,16 @@ h1 {
 
 .content-1 {
   max-height: 100%;
+  font-size: 1.5em;
   overflow: auto;
   text-align: center;
   background: radial-gradient(#008070, #006880);
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   height: 300px;
   /* scale this? Yes! It will cover up the bottom 100% or show some of it. And then extend the entire popup */
   color: #ffffff;
+  overflow: hidden;
 }
 
 .content-2 {
@@ -314,7 +316,7 @@ h1 {
   animation-delay: 4s;
   animation-name: dropDown;
   animation-duration: 4s;
-  animation-delay: 5s;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
 }
 
@@ -331,7 +333,7 @@ h1 {
   font-size: 1.1rem;
   display: inline-block;
   margin-top: 20px;
-  margin-left: 45px;
+  margin-left: 70px;
   margin-right: 10px;
   width: 45%;
   height: 40%;
@@ -345,7 +347,7 @@ h1 {
 
 @keyframes dropDown {
   from {
-    top: -250px;
+    top: -300px;
   }
   to {
     top: 0px;
@@ -435,7 +437,7 @@ h1 {
 /* For Tablets and larger screens
 ****************/
 
-/* @media (min-width: 750px) {
+@media (min-width: 750px) {
   .container {
     font-size: 14px;
   }
@@ -485,12 +487,13 @@ h1 {
     font-size: 1rem;
   }
   #play-again {
+    width: 35%;
     padding: 1.05rem 1.5rem;
-    font-size: 1rem;
+    font-size: 2rem;
   }
-} */
+}
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .container {
     font-size: 22px;
   }
@@ -511,23 +514,24 @@ h1 {
     font-size: 2rem;
   }
   #play-again {
-    padding: 1.05rem 1.5rem;
-    font-size: 2rem;
+    padding: 1.0rem 1.2rem;
+    font-size: 1.5rem;
   }
-} */
+}
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1600px) {
   .container {
-    font-size: 36px;
+    font-size: 30px;
   }
   .deck {
     width: 50%;
     height: 100%;
   }
   .deck .card {
-    height: 150px;
-    width: 150px;
+    height: 10rem;
+    width: 10rem;
   }
+  .
   .popup {
     width: 50%;
     height: 80%;
@@ -543,6 +547,6 @@ h1 {
   }
   #play-again {
     padding: 1.4rem 2rem;
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
-} */
+}
