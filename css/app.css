@@ -342,6 +342,7 @@ h1 {
   font-size: 2rem;
   color: #006880;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 /* animations */
@@ -438,6 +439,7 @@ h1 {
 /* For Tablets and larger screens
 ****************/
 
+/*
 @media (min-width: 750px) {
   .container {
     font-size: 14px;
@@ -549,4 +551,4 @@ h1 {
     padding: 1.4rem 2rem;
     font-size: 2rem;
   }
-}
+} */

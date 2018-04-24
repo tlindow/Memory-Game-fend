@@ -8,7 +8,7 @@ let content = document.getElementsByClassName("content");
 let contents = [...content];
 
 // deck of all cards in game
-const deck = document.getElementById("card-deck");
+let deck = document.getElementById("card-deck");
 
 // declaring move variable
 let moves = 40;
@@ -61,7 +61,7 @@ document.body.onload = startGame();
 
 // @description function to start a new play
 function startGame() {
-
+  console.log("started");
   //shuffle content
   z++;
 
@@ -289,4 +289,31 @@ for (var i = 0; i < cards.length; i++) {
   card.addEventListener("click", displayCard);
   card.addEventListener("click", cardOpen);
   //card.addEventListener("click",congratulations);
-}
+};
+
+$(document).ready(function() {
+  $('#middle').click(function() {
+    $('#middle').remove();
+    $('.deg0').addClass('card');
+    $('.deg45').addClass('card');
+    $('.deg90').addClass('card');
+    $('.deg135').addClass('card');
+    $('.deg180').addClass('card');
+    $('.deg225').addClass('card');
+    $('.deg270').addClass('card');
+    $('.deg315').addClass('card');
+    $('.deg0').removeClass('deg0');
+    $('.deg45').removeClass('deg45');
+    $('.deg90').removeClass('deg90');
+    $('.deg135').removeClass('deg135');
+    $('.deg180').removeClass('deg180');
+    $('.deg225').removeClass('deg225');
+    $('.deg270').removeClass('deg270');
+    $('.deg315').removeClass('deg315');
+    setTimeout(function() {
+      $('#card-deck').removeClass("circle-container");
+      $('#card-deck').addClass('deck');
+      $('li').removeClass('circle-card');
+    }, 5000);
+  })
+});
