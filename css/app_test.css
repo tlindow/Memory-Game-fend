@@ -26,6 +26,17 @@ body {
   overflow: hidden;
 }
 
+.bg {
+  /* The image used */
+  background-image: url("morning_lake_bird.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #middle {
   position: absolute;
   padding: 1.4rem 2rem;
@@ -35,6 +46,7 @@ body {
   font-size: 2.5rem;
   text-align: center;
   z-index: 2;
+  cursor: pointer;
 }
 
 #left_side {
@@ -87,6 +99,13 @@ h1 {
   opacity: .8;
 }
 
+.circle-card.show img {
+  max-width: 100%;
+  max-height: 100%;
+  visibility: visible;
+  z-index: 5;
+}
+
 .deck .card.match img {
   max-width: 100%;
   max-height: 100%;
@@ -115,7 +134,7 @@ h1 {
 
 .circle-container li {
   /* display: block; */
-  background-color: #E5F720;
+  background-color: #FCEE21;
   position: absolute;
   width: 4em;
   height: 4em;

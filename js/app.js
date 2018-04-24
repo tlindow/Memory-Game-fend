@@ -56,7 +56,7 @@ function shuffle(array) {
 
 
 // @description shuffles cards when page is refreshed / loads
-document.body.onload = startGame();
+// document.body.onload = startGame();
 
 
 // @description function to start a new play
@@ -293,7 +293,7 @@ for (var i = 0; i < cards.length; i++) {
 
 $(document).ready(function() {
   $('#middle').click(function() {
-    $('#middle').remove();
+    $('#middle').fadeOut();
     $('.deg0').addClass('card');
     $('.deg45').addClass('card');
     $('.deg90').addClass('card');
@@ -314,6 +314,7 @@ $(document).ready(function() {
       $('#card-deck').removeClass("circle-container");
       $('#card-deck').addClass('deck');
       $('li').removeClass('circle-card');
+      startGame();
     }, 5000);
   })
 });
