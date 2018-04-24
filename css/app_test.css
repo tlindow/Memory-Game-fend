@@ -534,7 +534,7 @@ h1 {
   transform: rotate(315deg) translate(12em) rotate(-315deg);
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     font-size: 22px;
   }
@@ -560,7 +560,7 @@ h1 {
   }
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
   .container {
     font-size: 30px;
   }
